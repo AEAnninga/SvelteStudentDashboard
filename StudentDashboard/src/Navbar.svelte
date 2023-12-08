@@ -17,7 +17,8 @@
 <style>
   #navbar {
     width: 100vw;
-    height: 10vh;
+    /* height: 10vh; */
+    padding: 10px;
     background: whitesmoke;
     display: flex;
     flex-flow: row wrap;

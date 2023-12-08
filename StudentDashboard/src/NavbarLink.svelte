@@ -12,8 +12,9 @@
 
 <style>
   img {
-    width: 8vh;
+    width: 75px;
     border-radius: 50%;
     border: 1px solid #6699cc;
   }
+
 </style>

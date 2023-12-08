@@ -1,0 +1,72 @@
+aside {
+
+    position: sticky;
+    bottom: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+
+.social-media {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;    
+    position: absolute;
+    bottom: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media__blog {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: width 1s;
+    overflow: hidden;        
+    gap: 25px;
+    padding: 12px;
+    background-color: #e17b77; 
+}
+
+.social-media__blog::before {
+    content: "\\f37c";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 30px;
+    color: white;
+}
+
+&::after {
+    content:"check out mijn blog";
+    color: white;
+    text-decoration: underline;
+    height: 24px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.social-media__blog:hover {
+
+    width: 250px;
+    transition: width 1s;
+    overflow: hidden;
+}
+
+.social-media__blog:hover::after {
+
+    content: "check out mijn blog";
+    color: white;
+    text-decoration: underline;
+    height: 24px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 3s;
+}
+
